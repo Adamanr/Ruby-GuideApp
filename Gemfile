@@ -12,17 +12,17 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 
-gem 'will_paginate', '~> 3.3.1'
+gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'webpacker'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'rexml', '~> 3.2', '>= 3.2.4'
+gem 'rexml'
 gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do

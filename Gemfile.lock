@@ -505,7 +505,7 @@ DEPENDENCIES
   puma
   rails
   rails_12factor
-  rake
+  rake (~> 13.0.6)
   rexml
   sass-rails
   selenium-webdriver

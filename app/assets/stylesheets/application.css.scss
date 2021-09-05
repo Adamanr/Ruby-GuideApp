@@ -14,7 +14,7 @@
  *= require_self
  */
 @import "bootstrap/scss/bootstrap";
-
+@import "users";
 $gray-medium-light: #eaeaea;
 $gray-light: #B5B8B1;
 $gray:#808080;
@@ -265,4 +265,16 @@ span.picture {
 
 .users.follow {
   padding: 0;
+}
+.forms{
+  margin-left: 33%;
+}
+label{
+  font-size: 1.5em;
+}
+.bodys{
+  height:20em;
+}
+.images{
+  margin-left: 0.6%;
 }

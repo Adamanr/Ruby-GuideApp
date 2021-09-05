@@ -120,7 +120,7 @@ GEM
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
-    ffi (1.15.3)
+    ffi (1.15.4)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (2.2.0)
@@ -488,7 +488,7 @@ DEPENDENCIES
   bcrypt
   bootsnap
   bootstrap-will_paginate
-  byebug (= 11.1.3)
+  byebug
   capybara
   carrierwave
   faker
@@ -500,7 +500,7 @@ DEPENDENCIES
   puma
   rails
   rails_12factor
-  rexml (~> 3.2, >= 3.2.4)
+  rexml
   sass-rails
   selenium-webdriver
   spring
@@ -510,10 +510,10 @@ DEPENDENCIES
   web-console
   webdrivers
   webpacker
-  will_paginate (~> 3.3.1)
+  will_paginate
 
 RUBY VERSION
-   ruby 3.0.1p64
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.15
+   2.2.22

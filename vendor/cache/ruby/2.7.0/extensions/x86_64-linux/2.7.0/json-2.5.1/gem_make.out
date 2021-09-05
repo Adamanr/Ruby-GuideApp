@@ -1,0 +1,13 @@
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/json-2.5.1/ext/json
+/home/adaman/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/adaman/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210905-23675-z45zub.rb extconf.rb
+creating Makefile
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR="
+make: Цель «all» не требует выполнения команд.
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" install

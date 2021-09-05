@@ -1,0 +1,15 @@
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/adaman/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/adaman/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210905-23675-i69e0w.rb extconf.rb
+creating Makefile
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20210905-23675-9qmabe/skiptrace/internal

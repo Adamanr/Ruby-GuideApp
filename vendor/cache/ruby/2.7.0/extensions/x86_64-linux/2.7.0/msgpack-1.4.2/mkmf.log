@@ -1,0 +1,277 @@
+have_header: checking for ruby/st.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -E -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/st.h>
+/* end */
+
+--------------------
+
+have_header: checking for st.h... -------------------- yes
+
+"gcc -E -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c -o conftest.i"
+In file included from conftest.c:3:
+/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward/st.h:2:2: предупреждение: #warning use "ruby/st.h" instead of bare "st.h" [-Wcpp]
+    2 | #warning use "ruby/st.h" instead of bare "st.h"
+      |  ^~~~~~~
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <st.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_replace() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_replace; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_intern_str() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern_str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_enc_interned_str() in ruby.h... -------------------- no
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+conftest.c: В функции «t»:
+conftest.c:16:57: ошибка: «rb_enc_interned_str» не описан (первое использование в этой функции); имелось в виду «rb_sym_interned_p»?
+   16 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+      |                                                         rb_sym_interned_p
+conftest.c:16:57: замечание: сообщение о каждом неописанном идентификаторе выдается один раз в каждой функции, где он встречается
+conftest.c: На верхнем уровне:
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
+/* end */
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+/usr/bin/ld: /tmp/ccFYtnjs.o: в функции «t»:
+/home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack/conftest.c:17: неопределённая ссылка на «rb_enc_interned_str»
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void rb_enc_interned_str();
+17: int t(void) { rb_enc_interned_str(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_sym2str() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_sym2str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_intern() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_intern; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_block_lambda() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_block_lambda; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_dup() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_clear() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/adaman/.rvm/rubies/ruby-2.7.0/lib -L/home/adaman/.rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_clear; return !p; }
+/* end */
+
+--------------------
+

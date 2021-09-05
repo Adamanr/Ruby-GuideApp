@@ -1,0 +1,16 @@
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+/home/adaman/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/adaman/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210905-23675-1wvktj1.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20210905-23675-1c8m2x2

@@ -1,0 +1,106 @@
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/ovirt-engine-sdk-4.4.1/ext/ovirtsdk4c
+/home/adaman/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/adaman/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210905-23675-1gc0bom.rb extconf.rb
+checking for xml2-config... yes
+checking for curl-config... yes
+creating Makefile
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/ovirt-engine-sdk-4.4.1/ext/ovirtsdk4c
+make "DESTDIR=" clean
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/ovirt-engine-sdk-4.4.1/ext/ovirtsdk4c
+make "DESTDIR="
+compiling ov_error.c
+compiling ov_http_client.c
+ov_http_client.c:216:29: предупреждение: избыточные элементы в инициализаторе массива
+  216 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_http_client.c:216:29: замечание: (где-то рядом с инициализацией для «ov_http_client_type.function.reserved»)
+ov_http_client.c: В функции «ov_http_client_header_task»:
+ov_http_client.c:392:33: предупреждение: comparison of integer expressions of different signedness: «long int» and «size_t» {aka «long unsigned int»} [-Wsign-compare]
+  392 |         while (pointer - buffer < length && isspace(*pointer)) {
+      |                                 ^
+ov_http_client.c: В функции «ov_http_client_wait_task»:
+ov_http_client.c:845:23: предупреждение: implicit conversion from «CURLMcode» to «CURLcode» [-Wenum-conversion]
+  845 |     context_ptr->code = curl_multi_wait(context_ptr->handle, NULL, 0, timeout, NULL);
+      |                       ^
+ov_http_client.c:866:23: предупреждение: implicit conversion from «CURLMcode» to «CURLcode» [-Wenum-conversion]
+  866 |     context_ptr->code = curl_multi_perform(context_ptr->handle, &pending);
+      |                       ^
+ov_http_client.c: В функции «ov_http_client_prepare_handle»:
+ov_http_client.c:1001:47: предупреждение: в передаче аргумента 2 «rb_hash_foreach»: несовместимый тип указателя [-Wincompatible-pointer-types]
+ 1001 |         rb_hash_foreach(request_ptr->headers, ov_http_client_add_header, (VALUE) headers);
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               int (*)(VALUE,  VALUE,  struct curl_slist **) {aka int (*)(long unsigned int,  long unsigned int,  struct curl_slist **)}
+In file included from /home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:2148,
+                 from /home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby.h:33,
+                 from ov_http_client.c:17:
+/home/adaman/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/intern.h:558:29: замечание: ожидался тип «int (*)(VALUE,  VALUE,  VALUE)» {aka «int (*)(long unsigned int,  long unsigned int,  long unsigned int)»}, но аргумент имеет тип «int (*)(VALUE,  VALUE,  struct curl_slist **)» {aka «int (*)(long unsigned int,  long unsigned int,  struct curl_slist **)»}
+  558 | void rb_hash_foreach(VALUE, int (*)(VALUE, VALUE, VALUE), VALUE);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ov_http_client.c: В функции «ov_http_client_send»:
+ov_http_client.c:1092:34: предупреждение: comparison of integer expressions of different signedness: «size_t» {aka «long unsigned int»} and «int» [-Wsign-compare]
+ 1092 |     if (RHASH_SIZE(ptr->pending) < ptr->limit) {
+      |                                  ^
+ov_http_client.c: В функции «ov_http_client_wait»:
+ov_http_client.c:1118:71: предупреждение: comparison of integer expressions of different signedness: «size_t» {aka «long unsigned int»} and «int» [-Wsign-compare]
+ 1118 |         while (RARRAY_LEN(ptr->queue) > 0 && RHASH_SIZE(ptr->pending) < ptr->limit) {
+      |                                                                       ^
+ov_http_client.c: На верхнем уровне:
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ov_http_request.c
+ov_http_request.c:75:29: предупреждение: избыточные элементы в инициализаторе массива
+   75 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_http_request.c:75:29: замечание: (где-то рядом с инициализацией для «ov_http_request_type.function.reserved»)
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ov_http_response.c
+ov_http_response.c:54:29: предупреждение: избыточные элементы в инициализаторе массива
+   54 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_http_response.c:54:29: замечание: (где-то рядом с инициализацией для «ov_http_response_type.function.reserved»)
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ov_http_transfer.c
+ov_http_transfer.c:51:29: предупреждение: избыточные элементы в инициализаторе массива
+   51 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_http_transfer.c:51:29: замечание: (где-то рядом с инициализацией для «ov_http_transfer_type.function.reserved»)
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ov_module.c
+compiling ov_string.c
+compiling ov_xml_reader.c
+ov_xml_reader.c:75:29: предупреждение: избыточные элементы в инициализаторе массива
+   75 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_xml_reader.c:75:29: замечание: (где-то рядом с инициализацией для «ov_xml_reader_type.function.reserved»)
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ov_xml_writer.c
+ov_xml_writer.c:69:29: предупреждение: избыточные элементы в инициализаторе массива
+   69 |         .reserved = { NULL, NULL }
+      |                             ^~~~
+ov_xml_writer.c:69:29: замечание: (где-то рядом с инициализацией для «ov_xml_writer_type.function.reserved»)
+ov_xml_writer.c: В функции «ov_xml_writer_string»:
+ov_xml_writer.c:184:12: предупреждение: initialization of «long unsigned int» from «void *» makes integer from pointer without a cast [-Wint-conversion]
+  184 |     return rb_funcall(ptr->io, STRING_ID, 0, NULL);
+      |            ^~~~~~~~~~
+ov_xml_writer.c:184:12: замечание: (где-то рядом с инициализацией для «rb_funcall_args[0]»)
+ov_xml_writer.c: На верхнем уровне:
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling ovirtsdk4c.c
+linking shared-object ovirtsdk4c.so
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/ovirt-engine-sdk-4.4.1/ext/ovirtsdk4c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ovirtsdk4c.so ./.gem.20210905-23675-1eqiudx

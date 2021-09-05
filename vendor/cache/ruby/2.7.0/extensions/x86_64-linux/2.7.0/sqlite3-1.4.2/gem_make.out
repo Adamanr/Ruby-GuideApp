@@ -1,0 +1,84 @@
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
+/home/adaman/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/adaman/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210905-23675-9iq7r9.rb extconf.rb
+checking for sqlite3.h... yes
+checking for pthread_create() in -lpthread... yes
+checking for -ldl... yes
+checking for sqlite3_libversion_number() in -lsqlite3... yes
+checking for rb_proc_arity()... yes
+checking for rb_integer_pack()... yes
+checking for sqlite3_initialize()... yes
+checking for sqlite3_backup_init()... yes
+checking for sqlite3_column_database_name()... yes
+checking for sqlite3_enable_load_extension()... yes
+checking for sqlite3_load_extension()... yes
+checking for sqlite3_open_v2()... yes
+checking for sqlite3_prepare_v2()... yes
+checking for sqlite3_int64 in sqlite3.h... yes
+checking for sqlite3_uint64 in sqlite3.h... yes
+creating Makefile
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
+make "DESTDIR=" clean
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
+make "DESTDIR="
+compiling aggregator.c
+compiling backup.c
+compiling database.c
+database.c: В функции «rb_sqlite3_open_v2»:
+database.c:38:9: предупреждение: неиспользуемая переменная «flags» [-Wunused-variable]
+   38 |   VALUE flags;
+      |         ^~~~~
+database.c: В функции «exec_batch»:
+database.c:726:57: предупреждение: в передаче аргумента 3 «sqlite3_exec»: несовместимый тип указателя [-Wincompatible-pointer-types]
+  726 |     status = sqlite3_exec(ctx->db, StringValuePtr(sql), hash_callback_function, callback_ary, &errMsg);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                         |
+      |                                                         int (*)(VALUE,  int,  char **, char **) {aka int (*)(long unsigned int,  int,  char **, char **)}
+In file included from ./sqlite3_ruby.h:25,
+                 from database.c:1:
+/usr/include/sqlite3.h:405:9: замечание: ожидался тип «int (*)(void *, int,  char **, char **)», но аргумент имеет тип «int (*)(VALUE,  int,  char **, char **)» {aka «int (*)(long unsigned int,  int,  char **, char **)»}
+  405 |   int (*callback)(void*,int,char**,char**),  /* Callback function */
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+database.c:726:81: предупреждение: при передаче аргумента 4 «sqlite3_exec» целое преобразуется в указатель без приведения типа [-Wint-conversion]
+  726 |     status = sqlite3_exec(ctx->db, StringValuePtr(sql), hash_callback_function, callback_ary, &errMsg);
+      |                                                                                 ^~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 VALUE {aka long unsigned int}
+In file included from ./sqlite3_ruby.h:25,
+                 from database.c:1:
+/usr/include/sqlite3.h:406:3: замечание: ожидался тип «void *», но аргумент имеет тип «VALUE» {aka «long unsigned int»}
+  406 |   void *,                                    /* 1st argument to callback */
+      |   ^~~~~~
+database.c:728:57: предупреждение: в передаче аргумента 3 «sqlite3_exec»: несовместимый тип указателя [-Wincompatible-pointer-types]
+  728 |     status = sqlite3_exec(ctx->db, StringValuePtr(sql), regular_callback_function, callback_ary, &errMsg);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                         |
+      |                                                         int (*)(VALUE,  int,  char **, char **) {aka int (*)(long unsigned int,  int,  char **, char **)}
+In file included from ./sqlite3_ruby.h:25,
+                 from database.c:1:
+/usr/include/sqlite3.h:405:9: замечание: ожидался тип «int (*)(void *, int,  char **, char **)», но аргумент имеет тип «int (*)(VALUE,  int,  char **, char **)» {aka «int (*)(long unsigned int,  int,  char **, char **)»}
+  405 |   int (*callback)(void*,int,char**,char**),  /* Callback function */
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+database.c:728:84: предупреждение: при передаче аргумента 4 «sqlite3_exec» целое преобразуется в указатель без приведения типа [-Wint-conversion]
+  728 |     status = sqlite3_exec(ctx->db, StringValuePtr(sql), regular_callback_function, callback_ary, &errMsg);
+      |                                                                                    ^~~~~~~~~~~~
+      |                                                                                    |
+      |                                                                                    VALUE {aka long unsigned int}
+In file included from ./sqlite3_ruby.h:25,
+                 from database.c:1:
+/usr/include/sqlite3.h:406:3: замечание: ожидался тип «void *», но аргумент имеет тип «VALUE» {aka «long unsigned int»}
+  406 |   void *,                                    /* 1st argument to callback */
+      |   ^~~~~~
+database.c: На верхнем уровне:
+cc1: замечание: unrecognized command-line option «-Wno-self-assign» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-parentheses-equality» may have been intended to silence earlier diagnostics
+cc1: замечание: unrecognized command-line option «-Wno-constant-logical-operand» may have been intended to silence earlier diagnostics
+compiling exception.c
+compiling sqlite3.c
+compiling statement.c
+linking shared-object sqlite3/sqlite3_native.so
+
+current directory: /home/adaman/RubymineProjects/environment/sample_app/vendor/cache/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20210905-23675-ez2a8x/sqlite3
